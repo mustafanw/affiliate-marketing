@@ -12,7 +12,7 @@ class TelegramMessageForwarder:
         self.dest_chn1 = dest_chn1
         self.dest_chn2 = dest_chn2
         self.test_chn = test_chn
-        self.client = TelegramClient('sessionserver', api_id, api_hash)
+        self.client = TelegramClient('9589625153server', api_id, api_hash)
         self.telegram_affiliate = TeleGramAffiliate()
 
     async def forward_messages(self, event):
