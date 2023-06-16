@@ -1,1 +1,1 @@
-worker: python telegram_message.py --log-file -
+worker: python server.py --log-file -
