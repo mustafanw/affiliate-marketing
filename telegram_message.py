@@ -38,7 +38,7 @@ class TelegramMessageForwarder:
 # Usage example
 api_id = 1958908
 api_hash = '21d35d34c158be29142b85527b4128ab'
-source_channel = 'stealsales'
+source_channel = 'FRCP_Official'
 test_chn = 'testgmnw'
 dest_chn1 = 'musaira_deals'
 dest_chn2 = 'musairadeals'
