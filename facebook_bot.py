@@ -1,7 +1,7 @@
 import facebook
 import re
 import requests
-graph = facebook.GraphAPI(access_token="EAACpTRXZBREcBACRdrdGBSlFiQ0Vw5lCKE8BZCUOUgFEU6BSx8ZBYmLBKjptkoyXdAsKq0P3vZCZBSL1QWZBWIhq9eI6ZBTkLwhNQgVJIYfvpLXUbo3vp4tzfgWy4ar8oTq22B0QG2D785d6Ee4LE8ZAZBg0Eb2bKn2GIOxbr8YL13IMts39eRYZB1")
+graph = facebook.GraphAPI(access_token="EAACpTRXZBREcBAJ5KBLc9ZBD4Ew1lTMF43fqluZAq0EXBSWMu35Jg1ZCfGoto6wy9J02d7Lra2gyNuDxU6KSLxZCSaVcTK8StnVBaZASqR2wtb9Nwvd1gHXmQoEGZC8Bgf9gJLIt5zBlL9PUktVL7wQSF0t4vWVWNrLHEdLW21hwZCe8JQsmqdkP")
 
 async def send_facebook_page(message, image_path=None):
     try:
