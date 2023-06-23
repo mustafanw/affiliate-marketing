@@ -1,7 +1,7 @@
 import facebook
 import re
 import requests
-graph = facebook.GraphAPI(access_token="EAACpTRXZBREcBAJ5KBLc9ZBD4Ew1lTMF43fqluZAq0EXBSWMu35Jg1ZCfGoto6wy9J02d7Lra2gyNuDxU6KSLxZCSaVcTK8StnVBaZASqR2wtb9Nwvd1gHXmQoEGZC8Bgf9gJLIt5zBlL9PUktVL7wQSF0t4vWVWNrLHEdLW21hwZCe8JQsmqdkP")
+graph = facebook.GraphAPI(access_token="EAACpTRXZBREcBAAEZC8YTZCiOQfIUHihdG92hzNCRsFYtdON7MdymoDa0XkPwQEZCAULs1ZBSo32tQGuS0q2HDHaRhraYwySPKLK4OMpuR78HTiPokatqAN0C402TJQWoK4ohm7zdZBEodWWASc7keHjvfDGbwi1bHn4oZAIfD9BdEJZAZAJIDBsO")
 
 async def send_facebook_page(message, image_path=None):
     try:
@@ -36,4 +36,4 @@ async def send_facebook_page(message, image_path=None):
 # Get New Access token
 # curl -i -X GET "https://graph.facebook.com/102888708318630?fields=access_token&access_token=EAACpTRXZBREcBAIf9PZBWk6qMYan4OwfWwohm0TWfNZByghyyZCEABKZAsEsSkF5B3SJZC5KhSJ6UgZBZCxc9pIZAc4OZAXuPYhQz7VSk3KesUNZAzsyEydtGIlbAY87P2u9FtzQl9ZADpXZCDZAT9qtbRdDuNDxqOkoT3GD3JjYYWTvbn0fAi7ETDiMNU"
 
-# curl -i -X POST "https://graph.facebook.com/102888708318630/feed?message=HelloFans!&access_token=EAACpTRXZBREcBACRdrdGBSlFiQ0Vw5lCKE8BZCUOUgFEU6BSx8ZBYmLBKjptkoyXdAsKq0P3vZCZBSL1QWZBWIhq9eI6ZBTkLwhNQgVJIYfvpLXUbo3vp4tzfgWy4ar8oTq22B0QG2D785d6Ee4LE8ZAZBg0Eb2bKn2GIOxbr8YL13IMts39eRYZB1"
+# curl -i -X POST "https://graph.facebook.com/102888708318630/feed?message=HelloFans!&access_token=EAACpTRXZBREcBAJ5KBLc9ZBD4Ew1lTMF43fqluZAq0EXBSWMu35Jg1ZCfGoto6wy9J02d7Lra2gyNuDxU6KSLxZCSaVcTK8StnVBaZASqR2wtb9Nwvd1gHXmQoEGZC8Bgf9gJLIt5zBlL9PUktVL7wQSF0t4vWVWNrLHEdLW21hwZCe8JQsmqdkP"
