@@ -101,7 +101,7 @@ class TeleGramAffiliate:
                 url=old_url
                 response = requests.get(url, headers=HEADERS)
                 soup=BeautifulSoup(response.content,'lxml')
-                # self.first_link = self.take_image_amazon(soup)
+                self.first_link = self.take_image_amazon(soup)
                 mrp_message=soup.find("span", attrs={'id':'productTitle'}).string.strip()
                 # try:
                 #     # mrp_price = soup.find("span", attrs={'class':'a-price a-text-price a-size-base'}).string.strip()
@@ -154,7 +154,7 @@ class TeleGramAffiliate:
                 url=old_url
                 response = requests.get(url, headers=HEADERS)
                 soup=BeautifulSoup(response.content,'lxml')
-                # self.first_link = self.take_image_flipkart(response)
+                self.first_link = self.take_image_flipkart(response)
                 mrp_message=soup.find("span", attrs={'class':'B_NuCI'}).text.strip()
                 try:
                     mrp_price = soup.find("div", attrs={'class':'_3I9_wc _2p6lqe'}).text.strip()
