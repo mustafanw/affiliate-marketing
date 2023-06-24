@@ -1,17 +1,15 @@
-import requests
+import http.client
 import json
 
-url = "https://graph.facebook.com/102888708318630/feed"
-
+conn = http.client.HTTPSConnection("graph.facebook.com")
 payload = json.dumps({
-  "access_token": "EAACpTRXZBREcBAKxHz2WotpSx9X6uIkEkH6Din3a0Eea6MLDtCIDFa8kIZBAVabUmfkRRXZCOROa9DudU6GB6HB9KpEOP9IqMkP6hLwhG5yeeVl15x9pmlH1bh5ZBKYQidAmbu1eDvUtsZBkcb3GrgegxZA4CeYJBe3nOqPb8S0Uj4yuhcKFH3",
+  "access_token": "EAACpTRXZBREcBAML9dMuPcK0TNWggPZAcII93MnFvrQt8h47HePwu0xl2SbkZBxqbSc5wSELAKT9D7I4MO9RKW8kJTfLp21yL6dDXwPCZAd17JycnTcTX8dO0vdwrexZBv4xYN7ZBhqxDFysWqMWrfvxFs7aflQTtZC52hucQBSffJjrWOTpqayz8J0rs4IakuTVYJxJymMwLXTkZBfE6eZCL",
   "message": "Hello, Facebook Page!"
 })
 headers = {
-  'Content-Type': 'application/json',
-  'User-Agent':'PostmanRuntime/7.26.10'
+  'Content-Type': 'application/json'
 }
-
-response = requests.request("POST", url, headers=headers, data=payload)
-
-print(response.text)
+conn.request("POST", "/102888708318630/feed", payload, headers)
+res = conn.getresponse()
+data = res.read()
+print(data.decode("utf-8"))
