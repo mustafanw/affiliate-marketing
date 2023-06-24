@@ -1,13 +1,14 @@
 import requests
 import json
+import os
 
-
+FB_TOKEN = os.environ.get("FB_TOKEN")
 async def send_facebook_page(message, image_path=None):
     try:
         url = "https://graph.facebook.com/102888708318630/feed"
 
         payload = json.dumps({
-        "access_token": "EAACpTRXZBREcBACpGCvgBuFoE5hZC1qAv93VDX1YulxyhXMqUKoJ5FnwLN9a6ZCPdAPUZBdhbZCBNyZCCk5z0ZCZBYQcKKzQHT8JWZCjn5aVLPyCPt78T67MSH79qHE2VpwkPRypVJUfUe5GFJtfwdKePLFOZCGm5HuQvw7HNTT05ZCojqlnkXJoLbV",
+        "access_token": FB_TOKEN,
         "message": "Hello, Facebook Page!"
         })
         headers = {
