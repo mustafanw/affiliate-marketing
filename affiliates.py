@@ -191,7 +191,8 @@ class TeleGramAffiliate:
                 for url in self.urls:
                     session = requests.Session()  
                     session.max_redirects = 5
-                    resp = session.head(url, allow_redirects=True)
+                    # resp = session.head(url, allow_redirects=True)
+                    resp = requests.get(url, allow_redirects=True)
                     old_url = resp.url
                     if "amazon" in old_url:
                         self.amazon_links(url, old_url)                                   
