@@ -1,27 +1,17 @@
 import requests
+import json
 
-# Define the page access token and page ID
-access_token = 'EAACpTRXZBREcBAGVSJFQ5ZCArumW3DcklnfqgT9DXjeZAZAsrWHv8ZCJPZC9O8UgWet1Ll4gMlmTmtVPS15M0W8WS0ZCYTNZC2Sqs4lPGZAHLCmFEr5Llp4PdZBUhaZAKpAau8FcYlDZBMLT1eCLSYNRYrSWTTi0f3mpAz0Y1qtmPwc60ejbslIYFskq'
-page_id = '102888708318630'
-HEADERS={
+url = "https://graph.facebook.com/102888708318630/feed"
 
-"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36",
-
-}
-# Define the API endpoint
-api_endpoint = f'https://graph.facebook.com/{page_id}/feed'
-
-# Define the post parameters
-post_params = {
-    'access_token': access_token,
-    'message': 'Hello, Facebook Page!'
+payload = json.dumps({
+  "access_token": "EAACpTRXZBREcBAKxHz2WotpSx9X6uIkEkH6Din3a0Eea6MLDtCIDFa8kIZBAVabUmfkRRXZCOROa9DudU6GB6HB9KpEOP9IqMkP6hLwhG5yeeVl15x9pmlH1bh5ZBKYQidAmbu1eDvUtsZBkcb3GrgegxZA4CeYJBe3nOqPb8S0Uj4yuhcKFH3",
+  "message": "Hello, Facebook Page!"
+})
+headers = {
+  'Content-Type': 'application/json',
+  'User-Agent':'PostmanRuntime/7.26.10'
 }
 
-# Make the API POST request
-response = requests.post(api_endpoint, data=post_params, headers=HEADERS)
+response = requests.request("POST", url, headers=headers, data=payload)
 
-# Check the response status
-if response.status_code == 200:
-    print('Post created successfully!')
-else:
-    print('Error creating post:', response.text)
+print(response.text)
