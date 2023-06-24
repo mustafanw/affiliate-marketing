@@ -8,7 +8,7 @@ import bitlyshortener
 import sys
 import shutil
 import requests
-# import facebook_bot
+import facebook_bot
 from datetime import datetime
 
 BASE_DIR = pathlib.Path(__file__).parent.absolute()
@@ -68,7 +68,7 @@ class TelegramMessageForwarder:
                 await self.client.send_message('@musaira_deals',event.message) #musaira_deals
                 await self.client.send_message('@musairadeals',event.message)
             
-            # await facebook_bot.send_facebook_page(wa_message,file_path)   
+            await facebook_bot.send_facebook_page(wa_message,file_path)   
             if file_path:
                     os.remove(file_path)
             print(f'Deals Published at {datetime.now().strftime("%m/%d/%Y, %H:%M:%S")}')
