@@ -108,8 +108,8 @@ def send_message(target,new_message,image_path):
             ActionChains(browser).key_down(Keys.SHIFT).key_down(Keys.ENTER).key_up(Keys.ENTER).key_up(
                     Keys.SHIFT).key_up(Keys.BACKSPACE).perform()
 
-        if image_path:
-            send_attachment(image_path)
+        # if image_path:
+        #     send_attachment(image_path)
             
         # breakpoint()
         time.sleep(13)
