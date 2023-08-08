@@ -29,5 +29,5 @@ async def send_facebook_page(message, image_path=None):
         print(str(ex))
         report = {}
         report["value1"] = "Musaira Deals Facebook Publish Failed"
-        requests.post("https://maker.ifttt.com/trigger/Facebook_Musaira_Deals/with/key/bMKgwR-VK-tw8rRpt-HM53pfeyhpQITaQIapwlZ1QZs", data=report)
+        requests.post("https://maker.ifttt.com/trigger/Facebook_Musaira_Deals_23/with/key/bMKgwR-VK-tw8rRpt-HM53pfeyhpQITaQIapwlZ1QZs", data=report)
 

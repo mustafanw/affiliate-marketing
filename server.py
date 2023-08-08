@@ -10,6 +10,7 @@ import shutil
 import requests
 import facebook_message
 from datetime import datetime
+import wa_automation
 
 BASE_DIR = pathlib.Path(__file__).parent.absolute()
 HEADERS={
@@ -54,6 +55,7 @@ class TelegramMessageForwarder:
         wa_message= ''.join(c for c in event.message.message if c <= '\uFFFF')
 
         try:
+            # breakpoint()
             if first_link and "error" not in first_link:    
                 await self.client.send_file('@musaira_deals',first_link[0],caption=event.message.message) #musaira_deals
                 await self.client.send_file('@musairadeals',first_link[0],caption=event.message.message)     
@@ -68,21 +70,14 @@ class TelegramMessageForwarder:
                 await self.client.send_message('@musaira_deals',event.message) #musaira_deals
                 await self.client.send_message('@musairadeals',event.message)
             
-            await facebook_message.send_facebook_page(wa_message,file_path)   
+            await facebook_message.send_facebook_page(wa_message,file_path)
+            await wa_automation.sender(wa_message,file_path)   
             if file_path:
                     os.remove(file_path)
             print(f'Deals Published at {datetime.now().strftime("%m/%d/%Y, %H:%M:%S")}')
         except Exception as e:
             print(f"Failed to forward message: {str(e)}")
     
-
-        # try:
-        #     await self.client.send_message(self.dest_chn1, message)
-        #     await self.client.send_message(self.dest_chn2, message)
-        #     await facebook_bot.send_facebook_page(wa_message,file_path)  
-        #     print(f"Message forwarded: {message}")
-        # except Exception as e:
-        #     print(f"Failed to forward message: {str(e)}")
 
     def start(self):
         print("Start")
@@ -99,6 +94,6 @@ test_chn = 'testgmnw'
 dest_chn1 = 'musaira_deals'
 dest_chn2 = 'musairadeals'
 
-
+wa_automation.whatsapp_login()
 forwarder = TelegramMessageForwarder(api_id, api_hash, source_channel, dest_chn1, dest_chn2, test_chn)
 forwarder.start()
