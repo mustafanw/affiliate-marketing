@@ -21,7 +21,7 @@ user_data = os.path.join(BASE_DIR, "User_Data")
 
 # chrome_driv = os.path.join(BASE_DIR, "chromedriver.exe")
 browser = None
-Contact = ['"Musaira Deals 99"', '"Musaira Deals 101"'] #"Musaira Deals 99"','"Selenium"','"Musaira Deals 3"','
+Contact = ['"Musaira Deals 99"'] #"Musaira Deals 99"','"Selenium"','"Musaira Deals 3"','
 message = "Test4"
 Link = "https://web.whatsapp.com/"
 mode="server"
