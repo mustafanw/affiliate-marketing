@@ -1,0 +1,16 @@
+2023/08/08-19:45:47.130 3238 Reusing MANIFEST d:\Projects\affiliate-marketing\User_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/08-19:45:47.132 3238 Recovering log #56
+2023/08/08-19:45:47.281 3238 Reusing old log d:\Projects\affiliate-marketing\User_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000056.log 
+2023/08/08-19:46:05.220 3238 Compacting 1@1 + 1@2 files
+2023/08/08-19:46:05.364 3238 Generated table #59@1: 15211 keys, 550418 bytes
+2023/08/08-19:46:05.364 3238 Compacted 1@1 + 1@2 files => 550418 bytes
+2023/08/08-19:46:05.366 3238 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/08/08-19:46:05.367 3238 Delete type=2 #55
+2023/08/08-19:46:05.367 3238 Delete type=2 #57
+2023/08/08-19:46:41.194 2270 Level-0 table #61: started
+2023/08/08-19:46:41.258 2270 Level-0 table #61: 1002149 bytes OK
+2023/08/08-19:46:41.262 2270 Delete type=0 #56
+2023/08/08-19:46:42.391 2270 Compacting 1@1 + 1@2 files
+2023/08/08-19:46:42.477 2270 Generated table #62@1: 21868 keys, 1029288 bytes
+2023/08/08-19:46:42.477 2270 Compacted 1@1 + 1@2 files => 1029288 bytes
+2023/08/08-19:46:42.478 2270 compacted to: files[ 0 0 1 0 0 0 0 ]

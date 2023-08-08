@@ -1,0 +1,21 @@
+[14584:24200:0808/194543.374:WARNING:chrome_main_delegate.cc(594)] This is Chrome version 115.0.5790.111 (not a warning)
+[14584:24200:0808/194543.741:INFO:chrome_browser_cloud_management_controller.cc(167)] Starting CBCM Controller Initialization
+[14584:24200:0808/194543.741:INFO:chrome_browser_cloud_management_controller.cc(195)] No machine level policy manager exists.
+[14584:24200:0808/194547.494:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.", source:  (0)
+[14584:11636:0808/194548.641:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:24200:0808/194550.943:INFO:CONSOLE(43)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (43)
+[14584:10368:0808/194553.654:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:11636:0808/194558.655:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:24200:0808/194602.939:INFO:CONSOLE(43)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (43)
+[14584:24200:0808/194602.939:INFO:CONSOLE(43)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (43)
+[14584:8816:0808/194603.665:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:12856:0808/194608.665:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:11636:0808/194613.668:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:8816:0808/194618.677:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:8816:0808/194623.681:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:8816:0808/194628.688:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:11636:0808/194633.693:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:8816:0808/194638.704:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:11636:0808/194643.719:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:11636:0808/194648.728:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
+[14584:12856:0808/194653.729:WARNING:page_discarding_helper.cc(129)] Discarding multiple pages with target (kb): 0
