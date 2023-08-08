@@ -60,11 +60,13 @@ def send_attachment(image_path):
     # Attachment Drop Down Menu
     #browser.find_element_by_xpath("//div[@id='main']/footer/div/div/div[2]/div/div/span").click()
     # browser.find_element_by_xpath("//div[@id='main']/footer/div/div/div/div/div[2]/div/div/span").click()
-    browser.find_element_by_xpath("//div[@id='main']/footer/div/div/span[2]/div/div/div[2]/div/span/div/div/ul/li/button/span").click()
+    # browser.find_element_by_xpath("//div[@id='main']/footer/div/div/span[2]/div/div/div[2]/div/span/div/div/ul/li/button/span").click()
+    browser.find_element_by_xpath("//div[@id='main']/footer/div/div/span[2]/div/div/div[2]/div/div/div/span").click()
     time.sleep(1)
     #browser.find_element_by_xpath("//div[@id='main']/footer/div/div/div[2]/div/span/div/div/ul/li/button/span").click()
     # browser.find_element_by_xpath("//div[@id='main']/footer/div/div/div/div/div[2]/div/span/div/div/ul/li/button/span").click()
-    browser.find_element_by_xpath("//div[@id='main']/footer/div/div/span[2]/div/div/div[2]/div/span/div/div/ul/li/button/span").click()
+    # browser.find_element_by_xpath("//div[@id='main']/footer/div/div/span[2]/div/div/div[2]/div/span/div/div/ul/li/button/span").click()
+    browser.find_element_by_xpath("//div[@id='main']/footer/div/div/span[2]/div/div/div[2]/div/span/div/ul/div/div/li/div/span").click()
     time.sleep(3)
     # browser.find_element_by_xpath("//input[@type='file']").clear()
     # browser.find_element_by_xpath("//input[@type='file']").send_keys(image_path)
@@ -75,6 +77,7 @@ def send_attachment(image_path):
     time.sleep(3)
     #browser.find_element_by_xpath("//div[@id='app']/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div").click()
     browser.find_element_by_xpath("//div[@id='app']/div/div/div[3]/div[2]/span/div/span/div/div/div[2]/div/div[2]/div[2]/div/div/span").click()
+    
 
 def send_message(target,new_message,image_path):
     global message, wait, browser
