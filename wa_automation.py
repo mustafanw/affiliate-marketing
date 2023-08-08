@@ -13,7 +13,7 @@ import argparse
 import platform
 import pathlib
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+# from webdriver_manager.chrome import ChromeDriverManager
 # chrome_driv = webdriver.Chrome(ChromeDriverManager().install())
 
 BASE_DIR = pathlib.Path(__file__).parent.absolute()
